@@ -1,0 +1,6 @@
+private String TAG = MainActivity.class.getSimpleName();
+private ProgressDialog pDialog;
+private ListView lv;
+// URL to get contacts JSON
+private static String SERVICE_URL = "http://flintstones.zift.ca/api/flintstones/";
+private ArrayList<Toon> toonList;

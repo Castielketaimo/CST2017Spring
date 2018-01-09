@@ -1,0 +1,31 @@
+<html>
+<head>
+<script>
+
+
+onload=function(){
+	if(document.getElementById){
+		document.getElementById('x').src='images/dog.jpg'
+		alert('getElementById')
+	}else if(document.all){
+		document.all['x'].src='images/dog.jpg'
+		alert('all')
+	}else if(document.x){
+		document.x.src='images/dog.jpg'
+		alert('.x')
+	}else if(document.images['x']){
+		document.images['x'].src='images/dog.jpg'
+		alert("['x']")
+	}else if(document.images[0]){
+		document.images[0].src='images/dog.jpg'
+		alert("0")
+	}else{
+		alert('error')
+	}
+	
+	//impossible to do, we trying to match every single dom.
+}
+</script></head><body>
+<img src="images/cat.jpg" name='x' id='x'>
+</body>
+</html>

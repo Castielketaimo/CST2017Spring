@@ -1,0 +1,20 @@
+<html>
+<head>
+<script src='jquery-3.2.1.min.js'></script>
+
+<script>
+onload=function(){
+	$('img').attr('src', 'images/dog.jpg')
+	$('img:even').css('border', 'dashed 3px green') //Jquery will deal with all the different dom for us
+                                                    //much easier
+}
+</script>
+
+</head><body>
+<img src="images/cat.jpg">
+<img src="images/turtle.jpg">
+<img src="images/fish.jpg" >
+<img src="images/bird.jpg" >
+
+</body>
+</html>

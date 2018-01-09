@@ -1,0 +1,18 @@
+Lab3 results report 
+
+Artur Gordiyenko
+A00953906
+
+Algorithm efficiency of Sequential Search is O(n) for a single word, and O(n^2) for the entire testData provided, as we need to perform the search for each element in testData file).
+
+Algorithm efficiency of Binary Search is O(log n) for a single word, and O(n) for the entire testData provided, as we need to perform the search for each element in testData file).
+
+
+Binary search algorithm is significantly faster than sequential search, because the problem is decreased by half on every iteration, and the other half is discarded.
+
+
+
+
+
+Side Note: I was using string concatenation ( string = string +  .. ), and the program took over 3 minutes to read the wordlist input.
+Changing the concatenation to StringBuilder increased the input read time to approximately 3 seconds. It is possible String Builder and String concatenation have a similar time difference as the two algorithms created in lab.

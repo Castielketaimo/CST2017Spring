@@ -1,0 +1,22 @@
+<html>
+<head>
+<script>
+onload=function(){
+	var ims = document.getElementsByTagName('img') //var only exits in the function
+
+	for(let i = 0; i < ims.length; i++){ //let only exits in within the loop
+		ims[i].width=50
+		ims[i].style.width="100px"
+	}
+}
+</script>
+</head>
+<body>
+
+<img src="images/cat.jpg">
+<img src="images/dog.jpg">
+<img src="images/turtle.jpg">
+<img src="images/bird.jpg">
+
+</body>
+</html>

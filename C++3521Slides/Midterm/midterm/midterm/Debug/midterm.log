@@ -1,0 +1,15 @@
+﻿  SubFive.cpp
+  QThree.cpp
+  QFive.cpp
+  main.cpp
+c:\users\casti\desktop\bcit\spring2017\c++3521slides\midterm\midterm\midterm\vector.h(20): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\casti\desktop\bcit\spring2017\c++3521slides\midterm\midterm\midterm\vector.h(21): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  Foo.cpp
+  Dog.cpp
+  Cat.cpp
+  Baz.cpp
+  Bar.cpp
+  Animal.cpp
+  Generating Code...
+  midterm.vcxproj -> C:\Users\casti\Desktop\BCIT\Spring2017\C++3521Slides\Midterm\midterm\Debug\midterm.exe
+  midterm.vcxproj -> C:\Users\casti\Desktop\BCIT\Spring2017\C++3521Slides\Midterm\midterm\Debug\midterm.pdb (Partial PDB)

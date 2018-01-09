@@ -1,0 +1,37 @@
+php
+python
+nodejs
+ruby
+c# asp
+pl cgi
+jsp java
+
+apache
+nginx
+iis
+
+https://education.github.com/pack
+digitalocean
+github
+namecheap
+
+https://www.jetbrains.com/phpstorm/
+free student account
+
+
+
+https://www.apachehaus.com/cgi-bin/download.plx
+Apache 2.4 VC14
+install to c:\Apache24
+cmd:
+	stop iis
+	navigate to c:\Apache24\bin
+	httpd -k install
+	edit c:\Apache24\conf\httpd.conf file: change port to 8080
+	kill or change processes using ports 80, 443
+	httpd -k install
+	httpd -k start
+	http://localhost:8080
+	http://localhost (port 80)
+	http://127.0.0.1
+

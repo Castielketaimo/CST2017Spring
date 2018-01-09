@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Spinner</string>
+    <string name="find_country">Find Countries</string>
+    <string name="countries">No continent selected</string>
+    <string name="input_the_number_you_want_to_convert">input the number you want to convert</string>
+    <string-array name="inputType">
+        <item>Kilometers per hour to Miles per hour</item>
+        <item>Miles per hour to Kilometers per hour</item>
+        <item>Meters per second to Miles per hour</item>
+        <item>Miles per hour to Meters per second</item>
+        <item>Meters per second to Kilometers per hour</item>
+        <item>Kilometers per hour to Meters per second</item>
+    </string-array>
+</resources>

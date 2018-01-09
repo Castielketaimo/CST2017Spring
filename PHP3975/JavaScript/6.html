@@ -1,0 +1,22 @@
+<html>
+<head>
+<script>
+function changeSrc(){
+	alert('test')
+	this.src="images/fish.jpg"
+}
+
+onload=function(){
+	var images = document.images
+	
+	for(let i = 0; i < images.length; i++){
+		images[i].onclick=changeSrc
+	}
+}
+</script></head><body>
+<img src="images/cat.jpg">
+<img src="images/dog.jpg">
+<img src="images/turtle.jpg">
+<img src="images/bird.jpg">
+</body>
+</html>

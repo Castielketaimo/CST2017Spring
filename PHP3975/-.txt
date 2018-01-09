@@ -1,0 +1,32 @@
+<?php 
+
+define('PI', 3.1);
+echo PI;
+
+// comments
+#comments
+/* comments
+comments
+*/
+
+$_ = 'whatever';
+$whatever_something5 = 'hi';
+
+$x = 5;
+echo $x;   // 5
+echo "$x"; // 5
+echo '$x'; // $x 
+
+echo "\$x is $x!";
+
+echo "hello";
+echo 'hello';
+print 'hello';
+
+?>
+
+<br>
+<?php 
+	echo "bye";
+?>
+<hr>

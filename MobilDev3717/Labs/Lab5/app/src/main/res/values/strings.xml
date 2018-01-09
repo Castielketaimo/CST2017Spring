@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="contentDescription">Good Foods Market</string>
+    <string-array name="myProducts">
+        <item>Fruits</item>
+        <item>Vegetables</item>
+        <item>Bakery</item>
+    </string-array>
+</resources>

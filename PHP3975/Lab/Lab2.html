@@ -1,0 +1,168 @@
+<html>
+<head>
+<style>
+img{width:80px}
+#div1{min-height:90px;  background-color:pink}
+#div2{min-height:90px;  background-color:cyan}
+#div3{min-height:90px;  background-color:red}
+</style>
+<script>
+
+currentLetter = null
+
+function moveByKey(e){
+
+	keyCode = null
+
+	if(e.which){
+		keyCode = e.which
+	}else if(e.event){
+		keyCode = e.event
+	}
+
+	//alert(keyCode)
+
+	var down = 40;
+	var right = 39;
+	var left = 37;
+	var up = 38;
+	
+	if((keyCode >= 65) && (keyCode <= 90)){
+		keyCode += 32
+		var letter = String.fromCharCode(keyCode)
+		//alert('you pressed ' + letter)
+		var thisImage = document.getElementById(letter)
+
+		if(currentLetter != null){
+			document.getElementById(currentLetter).style.border='none'
+		}
+		currentLetter = letter
+		thisImage.style.border='red dashed 2px'
+
+	}else if(keyCode == 39){ // right-arrow key
+		if(currentLetter != null){
+			moveThis()
+		}
+	} else if (keyCode == down){
+		if(currentLetter != null){
+			moveDown()
+		}
+	 } else if (keyCode == up){
+		if(currentLetter != null){
+			moveUp()
+		}
+	 } else if (keyCode == left){
+	 if(currentLetter != null){
+			moveleft()
+		}
+	 }
+}
+
+function moveleft(){
+	var img = document.getElementById(currentLetter)
+	var parentName = img.parentElement.id;
+
+	if(img.previousSibling == null && parentName == 'div1'){
+		document.getElementById('div3').appendChild(img)
+	}else if(img.previousSibling == null && parentName == 'div2'){
+		document.getElementById('div1').appendChild(img)
+	}else if(img.previousSibling == null && parentName == 'div3'){
+		document.getElementById('div2').appendChild(img)
+	}else{
+		img.parentNode.insertBefore(img, img.previousSibling)
+	}
+
+}
+function moveDown(){
+	var img = document.getElementById(currentLetter)
+		var parentName = img.parentElement.id;
+	if(parentName == 'div1'){
+		document.getElementById('div2').appendChild(img)
+	}else if(parentName == 'div2'){
+		document.getElementById('div3').appendChild(img)
+	}else if(parentName == 'div3'){
+		document.getElementById('div1').appendChild(img)
+	}
+}
+
+function moveUp(){
+	var img = document.getElementById(currentLetter)
+		var parentName = img.parentElement.id;
+	if(parentName == 'div1'){
+		document.getElementById('div3').appendChild(img)
+	}else if(parentName == 'div2'){
+		document.getElementById('div1').appendChild(img)
+	}else if(parentName == 'div3'){
+		document.getElementById('div2').appendChild(img)
+	}
+}
+
+
+
+function moveThis(){
+	var img = document.getElementById(currentLetter)
+	var parentName = img.parentElement.id;
+
+	if(img.nextSibling == null && parentName == 'div1'){
+		document.getElementById('div2').appendChild(img)
+	}else if(img.nextSibling == null && parentName == 'div2'){
+		document.getElementById('div3').appendChild(img)
+	}else if(img.nextSibling == null && parentName == 'div3'){
+		document.getElementById('div1').appendChild(img)
+	}else{
+		img.parentNode.insertBefore(img.nextSibling, img)
+	}
+}
+
+function move(){
+	// last image in this div; move to next div
+	// last image in this div; move to next div
+	var parentName = this.parentElement.id;
+
+	if(this.nextSibling == null && parentName == 'div1'){
+		document.getElementById('div2').appendChild(this)
+	}else if(this.nextSibling == null && parentName == 'div2'){
+		document.getElementById('div3').appendChild(this)
+	}else if(this.nextSibling == null && parentName == 'div3'){
+		document.getElementById('div1').appendChild(this)
+	}else{
+		this.parentNode.insertBefore(this.nextSibling, this)
+	}
+}
+
+function init(){
+
+	var div1 = document.createElement('div')
+	div1.id = 'div1'
+	var div2 = document.createElement('div')
+	div2.id = 'div2'
+	var div3 = document.createElement('div')
+	div3.id = 'div3'
+
+	document.body.appendChild(div1)
+	document.body.appendChild(div2)
+	document.body.appendChild(div3)
+
+
+
+	for(let i = 'a'.charCodeAt(0); i <= 'z'.charCodeAt(0); i++){
+		var letter = String.fromCharCode(i)
+
+		var img = document.createElement('img')
+		img.src = 'images/letters/' + letter + '.png'
+		img.id = letter
+
+		img.onclick=move
+
+		document.getElementById('div1').appendChild(img)
+	}
+}
+
+onload=init
+onkeydown=moveByKey
+
+</script>
+</head>
+<body>
+</body>
+</html>

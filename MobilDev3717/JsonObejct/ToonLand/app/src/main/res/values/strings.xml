@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ToonLand</string>
+    <string name="loading_items_msg">Loading cartoon characters ...</string>
+</resources>

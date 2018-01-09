@@ -1,0 +1,1 @@
+document.images[0].src='images/dog.jpg'

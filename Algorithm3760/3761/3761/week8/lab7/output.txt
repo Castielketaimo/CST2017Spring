@@ -1,0 +1,87 @@
+Question 1
+0 1 1 0 0 0 0 
+1 0 1 1 0 0 0 
+1 1 0 1 0 0 0 
+0 1 1 0 1 0 1 
+0 0 0 1 0 1 1 
+0 0 0 0 1 0 0 
+0 0 0 1 1 0 0 
+
+Question 2
+	Graph 1
+0 1 0 1 1 
+1 0 1 0 1 
+0 1 0 1 0 
+1 0 1 0 1 
+1 1 0 1 0 
+
+	Graph 2
+0 1 0 0 
+1 0 1 0 
+0 1 0 1 
+0 0 1 0 
+
+Question 3
+0 1 1 0 0 0 0 
+1 0 1 1 0 0 0 
+1 1 0 1 0 0 0 
+0 1 1 0 1 0 1 
+0 0 0 1 0 1 1 
+0 0 0 0 1 0 0 
+0 0 0 1 1 0 0 
+
+degree[0]=2
+degree[1]=3
+degree[2]=3
+degree[3]=4
+degree[4]=3
+degree[5]=1
+degree[6]=2
+
+Question 4
+Is directed? true
+ 0  1  1  1 
+-1  0  0  1 
+-1  0  0  1 
+-1 -1 -1  0 
+
+out degree[0]=3
+out degree[1]=1
+out degree[2]=1
+out degree[3]=0
+in degree[0]=0
+in degree[1]=1
+in degree[2]=1
+in degree[3]=3
+
+Question 5
+0 1 1 0 1 0 0 0 
+1 0 0 1 0 1 0 0 
+1 0 0 1 0 0 1 0 
+0 1 1 0 0 0 0 1 
+1 0 0 0 0 1 1 0 
+0 1 0 0 1 0 0 1 
+0 0 1 0 1 0 0 1 
+0 0 0 1 0 1 1 0 
+
+DFS
+visiting vertex 0
+visiting vertex 1
+visiting vertex 3
+visiting vertex 2
+visiting vertex 6
+visiting vertex 4
+visiting vertex 5
+visiting vertex 7
+
+BFS
+visiting vertex 0
+visiting vertex 1
+visiting vertex 2
+visiting vertex 4
+visiting vertex 3
+visiting vertex 5
+visiting vertex 6
+visiting vertex 7
+
+Process finished with exit code 0

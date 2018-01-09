@@ -1,0 +1,11 @@
+Castiel(HongPeng) Li -> A00944987 -> 95%
+
+Requirement: A blog website with a form contains "Read", "Write" options and "Submit" button. (Done)
+Requirement: When user select "Read" and click "submit" display the blog.txt data on broswer (Done)
+Requirement: When user select "write" and click "submit" redirect them to Blog page to insert data(Done)
+Requirement: In blog input page, two text area(Header and Body) and submit button displayed (Done)
+Requirement: No swear words allowed in Header (Done but only with english)
+Requirement: No tag or empty allowed in both header and body(Done)
+Requirement: When user click "submit", alert them input recorded(Done)
+Requirement: Store data in this format -> dates, days till christmas, Header ----------- body ************* 
+with the new line char for each line(Done)

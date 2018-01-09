@@ -1,0 +1,22 @@
+<html>
+<head>
+<script>
+onload=function(){
+	var ims = document.getElementsByTagName('img')
+
+	for(let i = 0; i < ims.length; i++){
+		ims[i].width=50 //changing the html, have default px
+		ims[i].style.width="100px" //changing the css, no default px
+	}
+}
+</script>
+</head>
+<body>
+
+<img src="images/cat.jpg">
+<img src="images/dog.jpg">
+<img src="images/turtle.jpg">
+<img src="images/bird.jpg">
+
+</body>
+</html>

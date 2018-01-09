@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">CastielLi_GraganbirBahusun</string>
+    <string name="Convert">Convert</string>
+    <string name="result">No result yet</string>
+    <string name="back">Back</string>
+    <string-array name="inputType">
+        <item>Kilometers per hour to Miles per hour</item>
+        <item>Miles per hour to Kilometers per hour</item>
+        <item>Meters per second to Miles per hour</item>
+        <item>Miles per hour to Meters per second</item>
+        <item>Meters per second to Kilometers per hour</item>
+        <item>Kilometers per hour to Meters per second</item>
+    </string-array>
+
+</resources>

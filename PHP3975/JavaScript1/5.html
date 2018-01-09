@@ -1,0 +1,30 @@
+<html>
+<head>
+<script>
+
+/*
+	computers and dates/times
+	computers store the time as a unix timestamp
+	one integer
+	the number of milliseconds since jan 1, 1970
+	
+	now: 				1 400 000 000 000
+	2 seconds later:	1 400 000 002 000
+	xmas 2017:			1 408 000 002 000
+*/
+
+today = new Date()
+xmas  = new Date(2017, 11, 25, 6, 30, 0)
+
+ms   = xmas - today
+days = ms / (1000 * 60 * 60 * 24)
+
+alert(Math.round(days) + " days until christmas")
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

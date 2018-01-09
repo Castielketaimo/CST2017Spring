@@ -1,0 +1,9 @@
+Castiel(HongPeng) Li -> A00944987 -> 100%
+
+Requirement: Create a page with a form that contains text input, remember me button and submit button(Done)
+Requirement: When there's not data input or COOKIE in browser, show empty form(Done)
+Requirement: When no data input but have COOKIE in browser, fill text with COOKIE value(Done)
+Requirement: When there's input data and checked remember me, fill  form with input data and set the cookie for input data(Done)
+Requirement: If remember me is checked, recheck the box.(Done)
+Requirement: If remember me is uncheck, left it uncheck.(Done)
+Requirement: If remember me is uncheck, delete all the cookies(Done)

@@ -1,0 +1,15 @@
+Castiel(HongPeng) Li -> A00944987 -> 100%
+
+Requirement: Create a login page allows user to log in(Done)
+Requirement: Check username and password with a txt file and only show "Secret", "private" and "logout" pages when username and password match(Done)
+Requirement: Show last loggedin time stamp in login page(Done)
+Requirement: change the "action="login.php" to a Variable that means "this page"(Done)
+Requirement: in the secret and private page, show the user name(Done)
+Requirement: in the secret and private page, show the logged in duration(Done)
+Requirement: in the secret and private page, show the login time(Done)
+Requirement: auto logout after 10 sec of "inactivity"(Done)
+Requirement: show "logged out due to timeout" if is auto logout(Done)
+Requirement: if user try to go some page, remember it and provide a link to go back to that page after logged in(Done)
+Requirement: destry all session when logged out(Done)
+Requirement: updates users and their timestamp every time they logged in(Done)
+

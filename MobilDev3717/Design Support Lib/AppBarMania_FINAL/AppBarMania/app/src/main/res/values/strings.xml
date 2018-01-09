@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">BCIT Computing</string>
+    <string name="info_request">Request for information</string>
+    <string name="info_request_title">Info Request</string>
+    <string name="action_share">Share</string>
+    <string name="title_top">Top Fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="bakery_items">
+        <item>Croissant</item>
+        <item>Muffin</item>
+        <item>Cookie</item>
+    </string-array>
+
+    <string-array name="produce_items">
+        <item>Carrot</item>
+        <item>Cucumber</item>
+        <item>Cabbage</item>
+    </string-array>
+
+    <string-array name="seafood_items">
+        <item>Crab</item>
+        <item>Shirimp</item>
+        <item>Salmon</item>
+    </string-array>
+
+    <string name="home_tab">Home</string>
+    <string name="bakery_tab">Bakery</string>
+    <string name="produce_tab">Produce</string>
+    <string name="seafood_tab">Seafood</string>
+
+    <string name="company_name">BCIT</string>
+    <string name="bcit_image">BCIT image</string>
+    <string name="bcit_bby_campus">BCIT Burnaby Campus</string>
+    <string name="home_text">
+        The British Columbia Institute of Technology (also referred to as BCIT), is a public polytechnic institution of higher education. The post-secondary institute has five campuses located in the Metro Vancouver region, with its main campus in Burnaby, British Columbia, Canada. There is also the Aerospace Technology Campus in Richmond, the Marine Campus in the City of North Vancouver, Downtown campus in Vancouver, and Annacis Island Campus in Delta. It is provincially chartered through legislation in the College and Institute Act. The school operates as a vocational and technical school, offering apprenticeships for the skilled trades and diplomas and degrees in vocational education for skilled technicians and workers in professions such as engineering, accountancy, business administration, nursing, medicine, architecture, and law.
+
+        BCIT was first established as the British Columbia Vocational School in 1960. When BCIT opened its Burnaby campus in 1964, initial enrollment was 498 students. As of 2013, enrollment has grown to 17,453 full-time students and 29,224 part-time students. Since its foundation, the institution has been home to over 125,000 alumni.
+    </string>
+
+    <string name="info_request_name_hint">Please enter your name</string>
+    <string name="info_request_details_hint">Please enter your order</string>
+</resources>

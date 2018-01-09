@@ -1,0 +1,49 @@
+<html>
+<head>
+<script>
+
+	/* history of js:
+	
+	1. no js 
+	2. dom 0:	weak, simple js
+				position-dependent
+				document.images[0]
+				document.links[1]
+				document.forms[3]
+				document.body.mytable.tr1.td2.i.src='dog.jpg'
+	3. ie		document.all
+	   nn		document.layers (dead)
+	4. dom 1/2/3:
+				document.getElementById
+				document.getElementsByTagName
+				w3c (MIT group)
+	5. jQuery	
+			
+	*/
+	/*
+	google uses:
+	document.f.q.focus()
+	supported everywhere
+	*/
+	
+	
+
+
+	// dom 0
+	//document.images[0].src='images/dog.jpg'
+	
+	/*
+	1. document:  <html>...</html>
+	2. window:    the current window/tab 
+	3. style:     all the css properties of an object 
+	4. navigator: the web browser
+	*/
+	
+	
+</script>
+</head>
+<body>
+	<img src='images/cat.jpg'>
+	<script>document.images[0].src='images/dog.jpg'</script>
+</body>
+</html>

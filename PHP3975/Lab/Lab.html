@@ -1,0 +1,86 @@
+<html>
+<head>
+    <script>
+
+        timer = null;
+        step = 0;
+        wakeRight = true;
+        var jump = false;
+        jumpUp = true;
+        counter = 0;
+        function changeDirection(){
+            if(parseInt(cat.style.left) >= window.innerWidth - 130){
+                wakeRight = false
+            } else if( parseInt(cat.style.left) <= 0){
+                wakeRight = true;
+            }
+			
+            if(parseInt(cat.style.top) === 50){
+                jumpUp = false;
+            } else if (parseInt(cat.style.top) === 101){
+                jumpUp = true;
+				jump = false;
+                cat.style.top = parseInt(cat.style.top) -1 + "px";
+            }
+        }
+        function move(){
+            step++;
+            step %= 31;
+            changeDirection();
+            if(jump === false){
+                if(wakeRight === true){
+                    cat.style.left = parseInt(cat.style.left) + 1 + "px";
+                    cat.src = "images/alien/alienrwalk" + step + ".gif"
+                } else if(wakeRight === false){
+                    cat.style.left = parseInt(cat.style.left) - 1 + "px";
+                    cat.src = "images/alien/alienlwalk" + step + ".gif"
+                }
+            } else if(jump === true){
+                if(wakeRight === true){
+                    cat.style.left = parseInt(cat.style.left) + 1 + "px";
+                    if(jumpUp === false){
+                        cat.style.top = parseInt(cat.style.top) + 1 + "px";
+                    } else if (jumpUp === true){
+                        cat.style.top = parseInt(cat.style.top) - 1 + "px";
+                    }
+                } else if(wakeRight === false){
+                    cat.style.left = parseInt(cat.style.left) - 1 + "px";
+                    if(jumpUp === false){
+                        cat.style.top = parseInt(cat.style.top) + 1 + "px";
+                    } else if (jumpUp === true){
+                        cat.style.top = parseInt(cat.style.top) - 1 + "px";
+                    }
+                }
+            }
+        }
+
+        function startMoving(){
+            if(timer === null){
+                timer = setInterval(move, 10)
+            }else{
+                clearInterval(timer);
+                timer = null
+            }
+        }
+
+        function startJumping(){
+            if(jump === false){
+                jump = true;
+            }
+        }
+        onload=function(){
+            cat = document.getElementById('cat');
+            cat.onclick=startMoving;
+            jumpBtm = document.getElementById('jump');
+            jumpBtm.onclick=startJumping;
+        }
+
+
+    </script>
+</head>
+<body>
+<img src="images/alien/alienrwalk0.gif" style="position:absolute; left:12px; top:100px" id="cat">
+
+<input type="button" value="jump" id = "jump">
+</body>
+</html>

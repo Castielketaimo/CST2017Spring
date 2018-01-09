@@ -1,0 +1,126 @@
+package Lab;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.*;
+import java.util.Map.Entry;
+
+public class Lab7 {
+    public static void main(String[] args) {
+        System.out.println("Question 1:\n");
+        question1();
+        System.out.println("\nEnd Of Question 1 ----------------------------");
+        
+        System.out.println("\nQuestion 2:\n");
+        question2();
+        System.out.println("\nEnd Of Question 2 ----------------------------");
+        
+        System.out.println("\nQuestion 3:\n");
+        question3();
+        System.out.println("\nEnd of Question 3 ----------------------------");
+    }
+
+    private static void question1() {
+        String[] wordList = readFile("love.txt");
+        Arrays.sort(wordList);
+        TreeMap<String, Integer> map = new TreeMap<String, Integer>();
+        for(int i = 0; i < wordList.length; i++){
+            if(!map.containsKey(wordList[i])){
+                map.put(wordList[i], 1);
+            }else{
+                map.put(wordList[i], (int)(map.get(wordList[i])) + 1);
+            }
+        }
+        for (String key: map.keySet()){
+            String keys =key.toString();
+            String value = map.get(keys).toString();  
+            System.out.println(key + " - " + value);  
+} 
+    }
+
+    private static void question2() {
+        String[] wordList = readFile("q2input.txt");
+        HashSet<String> set = new HashSet<String>(); 
+        for(int i = 0; i < wordList.length; i++){
+            if(!set.contains(wordList[i])){
+                set.add(wordList[i]);
+            }else {
+                System.out.println("NOT DISTINCT");
+                return;
+            }
+        }
+        System.out.println("DISTINCT");
+    }
+
+    private static void question3(){
+        String line1;
+        int K;
+        int E;
+        //String[] keyWordList;
+        HashSet<String> keyset = new HashSet<String>();
+        String[] excusesList = null;
+        try {
+            BufferedReader fileBuffer = new BufferedReader(new FileReader("q3Test.txt"));
+            line1 = fileBuffer.readLine();
+            String[] line1Temp = line1.split(" ");
+            K = Integer.parseInt(line1Temp[0]);
+            E = Integer.parseInt(line1Temp[1]);
+            //keyWordList = new String[K];
+            excusesList = new String[E];
+            for(int i = 0; i < K; i++) {
+                //keyWordList[i] = fileBuffer.readLine();
+                keyset.add(fileBuffer.readLine());
+            }
+            for(int j = 0; j < E; j++) {
+                excusesList[j] = fileBuffer.readLine();
+            }
+            fileBuffer.close();
+        }catch(Exception e){
+            System.out.println("Error while reading q3Test.txt");
+        }
+        Map<String, Integer>WorstExcusesMap = new HashMap<String, Integer>();
+        int worstCount = 0;
+        for(int x = 0; x < excusesList.length; x++){
+            String[] temp = excusesList[x].split(" ");
+            int counter = 0;
+            for(int y = 0; y < temp.length; y++){
+                if(keyset.contains(temp[y])){
+                    counter++;
+                }
+            }
+            if(counter > worstCount){
+                worstCount = counter;
+            }
+            WorstExcusesMap.put(excusesList[x], counter);
+        }
+        for(int l = 0; l < WorstExcusesMap.size(); l++){
+            if((int)WorstExcusesMap.get(excusesList[l]) == worstCount){
+                System.out.println(excusesList[l]);
+            }
+        } 
+        }
+
+    private static String[] readFile(String fileName){
+        String line;
+        String storeFile = "";
+        try {
+            BufferedReader filebuffer = new BufferedReader(new FileReader(fileName));
+            while((line = filebuffer.readLine()) != null){
+                if (!line.equals("")) {
+                    storeFile += line.toLowerCase() + " ";
+                }
+            }
+            filebuffer.close();
+        }
+        catch (Exception e) {
+            System.out.println("File error.");
+        }
+        String[] wordList = storeFile.split(" ");
+        return wordList;
+    }
+}
+
+
+
+

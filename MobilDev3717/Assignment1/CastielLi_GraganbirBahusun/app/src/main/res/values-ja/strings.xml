@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CastielLi_GraganbirBahusun</string>
+    <string name = "Convert">変換</string>
+    <string name = "result">結果がまだありません</string>
+    <string-array name="inputType">
+        <item>キロメートル/時間/マイル/時</item>
+        <item>時間あたりのマイル数/キロメートル/時</item>
+        <item>時間あたりのメーター/マイル/時</item>
+        <item>時間あたりのマイル数/秒</item>
+        <item>秒あたりのメーター/キロメートル/時</item>
+        <item>キロメートル/メートル/秒</item>
+    </string-array>
+
+</resources>

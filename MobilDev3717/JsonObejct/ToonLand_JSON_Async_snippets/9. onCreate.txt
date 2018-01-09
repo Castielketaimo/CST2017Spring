@@ -1,0 +1,3 @@
+toonList = new ArrayList<Toon>();
+lv = (ListView) findViewById(R.id.toonList);
+new GetContacts().execute();

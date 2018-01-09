@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_row="0"
+        android:ems="8"
+        android:inputType="numberDecimal"
+        android:text="@string/bill_amount"
+        android:textSize="20sp"
+        tools:ignore="LabelFor"
+        android:layout_columnSpan="4">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_row="1"
+        android:text="@string/tip_percent_label"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_rowSpan="4"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_row="1"
+        android:padding="5dp"
+        android:text="@string/tip_percent"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="64dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/decrease"
+        android:textSize="20sp"
+        app:layout_constraintRight_toLeftOf="@+id/percentUpButton"
+        app:layout_constraintTop_toTopOf="@+id/percentTextView"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="64dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="14dp"
+        android:text="@string/increase"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/percentDownButton"
+        app:layout_constraintRight_toRightOf="@+id/billAmountEditText"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="30dp"
+        android:layout_row="2"
+        android:padding="10dp"
+        android:text="@string/tip_amount_label"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:layout_marginStart="23dp"
+        android:padding="5dp"
+        android:text="@string/total_amount"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_row="0"
+        android:padding="10dp"
+        android:text="@string/bill_amount_label"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_marginTop="12dp"
+        android:layout_row="3"
+        android:padding="10dp"
+        android:text="@string/total_amount_label"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="8dp"
+        />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:padding="5dp"
+        android:text="@string/tip_amount"
+        android:textSize="20sp"/>
+
+</GridLayout>

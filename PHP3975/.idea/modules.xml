@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Notes/.idea/Notes.iml" filepath="$PROJECT_DIR$/Notes/.idea/Notes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/PHP3975.iml" filepath="$PROJECT_DIR$/.idea/PHP3975.iml" />
+      <module fileurl="file://C:/Apache24/htdocs/iDunnoWhatToNameMyProjectSoImGonnaJustUseThis/.idea/iDunnoWhatToNameMyProjectSoImGonnaJustUseThis.iml" filepath="C:/Apache24/htdocs/iDunnoWhatToNameMyProjectSoImGonnaJustUseThis/.idea/iDunnoWhatToNameMyProjectSoImGonnaJustUseThis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../Castiel/Side Projects/ShitFaceTime/laravel/.idea/laravel.iml" filepath="$PROJECT_DIR$/../../../Castiel/Side Projects/ShitFaceTime/laravel/.idea/laravel.iml" />
+    </modules>
+  </component>
+</project>
